@@ -35,7 +35,7 @@ Future<List<FileX>> openFiles() async {
 }
 
 Future<List<FileX>> _open(bool multiple, bool folders,
-    [String types = 'application/pdf']) async {
+    [String types = '.pdf']) async {
   html.InputElement _filePicker = html.querySelector('#file-picker');
   final _upload = _filePicker ?? html.FileUploadInputElement();
   _upload.accept = types;
